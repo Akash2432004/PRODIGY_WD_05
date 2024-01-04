@@ -50,6 +50,3 @@ WeatherApp is a sleek and intuitive web application designed to provide accurate
    Special thanks to Youtube videos, Online resources and A.I tools   
 
 ## 🌦️ **WeatherApp** – Bringing Elegance to Weather Forecasting 🌦️
-   Check it out: (https://jatush.github.io/PRODIGY_WD_04/)
-
-Connect with me on LinkedIn: (www.linkedin.com/in/jatush-hingu)# PRODIGY_WD_05
