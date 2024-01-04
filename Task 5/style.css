@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #F0F4F8;
+}
+
+h1 {
+    background: #4CAF50; /* Dark green background */
+    font-size: 2rem; /* Increased text size */
+    text-align: center;
+    padding: 18px 0;
+    color: #ECF0F1;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.weather-input {
+    width: 100%;
+    max-width: 650px; /* Increased search box size */
+    margin: 0 auto;
+}
+
+.weather-input input,
+.weather-input select {
+    height: 56px; /* Increased input box height */
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1.07rem;
+    padding: 0 17px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+.weather-input input:focus,
+.weather-input select:focus {
+    padding: 0 16px;
+}
+
+.separator {
+    height: 1px;
+    width: 100%;
+    margin: 25px 0;
+    background: #4CAF50; /* Dark green separator line */
+}
+
+.weather-input button {
+    border: 2px solid #4CAF50; /* Dark green border */
+    background: #4CAF50; /* Blue background */
+    color: #ECF0F1; /* White text color */
+    font-size: 1.2rem; /* Increased text size */
+}
+
+.weather-input button:hover {
+    background: #4CAF50; /* Darker shade of blue on hover */
+}
+
+.location-btn:hover {
+    background: #1565C0; /* Darker shade of blue on hover */
+}
+
+.current-weather {
+    color: #ECF0F1;
+    background: #4CAF50; /* Dark green background */
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #4CAF50; /* Dark green border */
+    width: 70%;
+    margin: 0 auto;
+}
+
+.current-weather h2 {
+    font-weight: 700;
+    font-size: 2rem; /* Increased text size */
+    color: #ECF0F1; /* White title */
+}
+
+.weather h6 {
+    font-size: 1.2rem; /* Increased text size */
+    font-weight: 500;
+    color: #ECF0F1; /* White text color */
+}
+
+.current-weather .icon {
+    text-align: center;
+}
+
+.current-weather .icon img {
+    max-width: 120px;
+}
+
+.current-weather .icon h6 {
+    text-transform: capitalize;
+}
+
+.forecast h2 {
+    margin: 20px 0;
+    font-size: 1.8rem; /* Increased text size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.forecast .weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-cards .card {
+    color: #ECF0F1;
+    padding: 15px; /* Smaller box size */
+    list-style: none;
+    width: calc(33.33% - 10px); /* Three cards in one row */
+    background: #4CAF50; /* Dark green background */
+    border-radius: 5px;
+    border: 2px solid #4CAF50; /* Dark green border */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.weather-cards .card:nth-child(3n) {
+    margin-right: 0; /* No right margin for every third card */
+}
+
+.weather-cards .card h3 {
+    font-size: 1.5rem; /* Increased text size */
+    font-weight: 600;
+    color: #4CAF50; /* Blue title color */
+}
+
+.weather-cards .card img {
+    max-width: 60px; /* Smaller icon size */
+    margin: 5px 0 -8px 0;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #4CAF50; /* Dark green background */
+    color: #ECF0F1; /* White text color */
+    text-align: center;
+    padding: 10px; /* Smaller padding */
+}
+
+@media (min-width: 750px) {
+    .weather-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+    .weather-input {
+        width: 48%;
+    }
+
+    .weather-input .location-btn {
+        width: 48%;
+    }
+
+    .weather .current-weather {
+        width: 48%;
+    }
+
+    .weather-cards .card {
+        width: calc(50% - 10px); /* Two cards in one row */
+    }
+
+    .weather-cards .card:nth-child(2n) {
+        margin-right: 0; 
+    }
